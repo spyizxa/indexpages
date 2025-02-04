@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <title> HACKED BY SWARE TURKEY </title>
+    <link rel="icon" type="image/x-icon" href="https://i.hizliresim.com/m085w7d.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        body {
+            background-color: black;
+        }
+        .yazı {
+            color: white;
+            font-family: Verdana, sans-serif;
+        }
+        .yazı h1 {
+            text-shadow: 0 0 10px cyan;
+            font-size: 40px;
+        }
+        #admin {
+            color: red;
+            text-shadow: 0 0 10px red;
+        }
+        .resim {
+            text-align: center;
+        }
+        .yazı h2{
+            margin-top: 20px;
+        }
+        .yazı p {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        #MRGLOBAL {
+            color: aquamarine;
+        }
+        #Fladd {
+            color: crimson;
+        }
+
+.canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="canvas-container">
+        <canvas id="spider-web"></canvas>
+    </div>
+    <div class="resim">
+        <img src="https://resmim.net/cdn/2025/02/03/DUqYDL.jpg" alt="logo.png" width="15%" height="15%">
+    </div>
+    <div class="yazı">
+        <h1>Hacked By Sware Turkey</h1>
+        <h2>Hello 𓁹 <span id="admin">Admin</span><br> What is Your Security Doing :D</h2>
+        <p><span id="yazz"></span><span id="yaz"></span></p>
+        <h2>Hacked by <span id="admin">spyizxa - medellin </span><br></h2>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+            }
+        });
+    </script>
+    <script>
+        const canvas = document.getElementById('spider-web');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+}
+
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+const points = [];
+const mouse = {
+    x: null,
+    y: null
+};
+
+canvas.addEventListener('mousemove', (event) => {
+    mouse.x = event.clientX;
+    mouse.y = event.clientY;
+});
+
+class Point {
+    constructor(x, y, radius, color) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.color = color;
+        this.dx = Math.random() - 0.5;
+        this.dy = Math.random() - 0.5;
+    }
+
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+
+    update() {
+        if (this.x < 0 || this.x > canvas.width) this.dx = -this.dx;
+        if (this.y < 0 || this.y > canvas.height) this.dy = -this.dy;
+        this.x += this.dx;
+        this.y += this.dy;
+        this.draw();
+    }
+}
+
+function init() {
+    for (let i = 0; i < 170; i++) {
+        let radius = 2;
+        let x = Math.random() * canvas.width;
+        let y = Math.random() * canvas.height;
+        let color = 'white';
+        points.push(new Point(x, y, radius, color));
+    }
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < points.length; i++) {
+        points[i].update();
+
+        for (let j = i + 1; j < points.length; j++) {
+            const dx = points[i].x - points[j].x;
+            const dy = points[i].y - points[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 100) {
+                ctx.beginPath();
+                ctx.moveTo(points[i].x, points[i].y);
+                ctx.lineTo(points[j].x, points[j].y);
+                ctx.strokeStyle = 'rgba(255, 255, 255, ' + (1 - distance / 100) + ')';
+                ctx.stroke();
+            }
+        }
+
+        if (mouse.x && mouse.y) {
+            const dx = points[i].x - mouse.x;
+            const dy = points[i].y - mouse.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 100) {
+                ctx.beginPath();
+                ctx.moveTo(points[i].x, points[i].y);
+                ctx.lineTo(mouse.x, mouse.y);
+                ctx.strokeStyle = 'rgba(255, 255, 255, ' + (1 - distance / 100) + ')';
+                ctx.stroke();
+            }
+        }
+    }
+}
+
+init();
+animate();
+
+    </script>
+</body>
+</html>
+
+  </script>
+</body>
+</html>
+
+
+
+>
+
+pt>
+</body>
+</html>
+
+  </script>
+</body>
+</html>
+
+
+
+>
+
+cript>
+</body>
+</html>
+
+
+
+>
+
