@@ -1,225 +1,97 @@
 <!DOCTYPE html>
-<html lang="tr-TR">
+<html lang="en">
 <head>
-    <title> HACKED BY SWARE TURKEY </title>
-    <link rel="icon" type="image/x-icon" href="https://i.hizliresim.com/m085w7d.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked by Sware Turkey</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        /* Temel stil ayarları */
         body {
             background-color: black;
-        }
-        .yazı {
             color: white;
-            font-family: Verdana, sans-serif;
-        }
-        .yazı h1 {
-            text-shadow: 0 0 10px cyan;
-            font-size: 40px;
-        }
-        #admin {
-            color: red;
-            text-shadow: 0 0 10px red;
-        }
-        .resim {
             text-align: center;
+            font-family: 'Press Start 2P', sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .yazı h2{
+        h1 {
+            color: red;
+            font-size: 22px;
+        }
+        .logo {
             margin-top: 20px;
+            width: 100%;
+            max-width: 500px; /* Görselin en fazla 500px genişliğinde olmasını sağlıyoruz */
         }
-        .yazı p {
-            margin-top: 30px;
-            font-size: 20px;
+        .telegram {
+            color: blue;
+            font-size: 16px;
         }
-        #MRGLOBAL {
-            color: aquamarine;
+        .quote {
+            color: red;
+            font-size: 18px;
         }
-        #Fladd {
-            color: crimson;
+        .message {
+            color: orange;
+            font-size: 14px;
         }
-
-.canvas-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
-
-canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
+        .subtitle {
+            color: red; /* Aynı kırmızı renk */
+            font-size: 18px;
+            margin-top: 10px; /* İlk boşluk */
+        }
+        .spacer {
+            margin-top: 10px; /* Ekstra boşluk */
+        }
+        
+        /* Mobil uyumlu stil ayarları */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 18px; /* Telefon için başlık boyutunu küçültüyoruz */
+            }
+            .quote {
+                font-size: 16px; /* Alıntı yazısının boyutunu küçük yapıyoruz */
+            }
+            .message {
+                font-size: 12px; /* Mesaj boyutunu küçük yapıyoruz */
+            }
+            .logo {
+                width: 80%; /* Görselin mobil cihazlarda %80 genişliğinde olmasını sağlıyoruz */
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="canvas-container">
-        <canvas id="spider-web"></canvas>
-    </div>
-    <div class="resim">
-        <img src="https://resmim.net/cdn/2025/02/03/DUqYDL.jpg" alt="logo.png" width="15%" height="15%">
-    </div>
-    <div class="yazı">
-        <h1>Hacked By Sware Turkey</h1>
-        <h2>Hello 𓁹 <span id="admin">Admin</span><br> What is Your Security Doing :D</h2>
-        <p><span id="yazz"></span><span id="yaz"></span></p>
-        <h2>Hacked by <span id="admin">spyizxa - cypher</span><br></h2>
-    </div>
-    <script type="text/javascript">
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-    </script>
-    <script type="text/javascript">
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-                e.preventDefault();
-            }
-        });
-    </script>
-    <script type="text/javascript">
-        document.addEventListener('keydown', function(e) {
-            if (e.ctrlKey && e.key === 'u') {
-                e.preventDefault();
-            }
-        });
-    </script>
-    <script>
-        const canvas = document.getElementById('spider-web');
-const ctx = canvas.getContext('2d');
+    <h1>Hacked By Sware Turkey</h1>
+    
+    <!-- Yeni resim boyutu büyütülmüş -->
+    <a href="https://hizliresim.com/4i1y915">
+        <img src="https://i.hizliresim.com/4i1y915.gif" alt="Resim Yükle" class="logo">
+    </a>
+    
+    <p class="telegram">Telegram: <a href="https://t.me/swareturkey" style="color: blue;">SwareTurkey</a></p>
+    
+    <!-- Boşluk bırakıldı -->
+    <p class="spacer"></p>
+    
+    <p class="subtitle">spymatr1x-spyizxa</p>
+    
+    <!-- Boşluk bırakıldı -->
+    <p class="spacer"></p>
 
-function resizeCanvas() {
-    canvas.width = canvas.clientWidth;
-    canvas.height = canvas.clientHeight;
-}
+    <p class="quote">Your system is vulnerable, admin...<br>Azerbaijani hacker exploited the weak points!<br>When security is neglected, the result is inevitable!</p>
+    <p class="message">"Think like an attacker, not a user."</p>
 
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
-
-const points = [];
-const mouse = {
-    x: null,
-    y: null
-};
-
-canvas.addEventListener('mousemove', (event) => {
-    mouse.x = event.clientX;
-    mouse.y = event.clientY;
-});
-
-class Point {
-    constructor(x, y, radius, color) {
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
-        this.color = color;
-        this.dx = Math.random() - 0.5;
-        this.dy = Math.random() - 0.5;
-    }
-
-    draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-    }
-
-    update() {
-        if (this.x < 0 || this.x > canvas.width) this.dx = -this.dx;
-        if (this.y < 0 || this.y > canvas.height) this.dy = -this.dy;
-        this.x += this.dx;
-        this.y += this.dy;
-        this.draw();
-    }
-}
-
-function init() {
-    for (let i = 0; i < 170; i++) {
-        let radius = 2;
-        let x = Math.random() * canvas.width;
-        let y = Math.random() * canvas.height;
-        let color = 'white';
-        points.push(new Point(x, y, radius, color));
-    }
-}
-
-function animate() {
-    requestAnimationFrame(animate);
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    for (let i = 0; i < points.length; i++) {
-        points[i].update();
-
-        for (let j = i + 1; j < points.length; j++) {
-            const dx = points[i].x - points[j].x;
-            const dy = points[i].y - points[j].y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-
-            if (distance < 100) {
-                ctx.beginPath();
-                ctx.moveTo(points[i].x, points[i].y);
-                ctx.lineTo(points[j].x, points[j].y);
-                ctx.strokeStyle = 'rgba(255, 255, 255, ' + (1 - distance / 100) + ')';
-                ctx.stroke();
-            }
-        }
-
-        if (mouse.x && mouse.y) {
-            const dx = points[i].x - mouse.x;
-            const dy = points[i].y - mouse.y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-
-            if (distance < 100) {
-                ctx.beginPath();
-                ctx.moveTo(points[i].x, points[i].y);
-                ctx.lineTo(mouse.x, mouse.y);
-                ctx.strokeStyle = 'rgba(255, 255, 255, ' + (1 - distance / 100) + ')';
-                ctx.stroke();
-            }
-        }
-    }
-}
-
-init();
-animate();
-
-    </script>
+    <!-- YouTube Şarkısı Arka Planda Otomatik Çalacak -->
+    <iframe 
+        width="0" 
+        height="0" 
+        src="https://www.youtube.com/embed/wL8DVHuWI7Y?autoplay=1&loop=1&playlist=wL8DVHuWI7Y" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
-
-  </script>
-</body>
-</html>
-
-
-
->
-
-pt>
-</body>
-</html>
-
-  </script>
-</body>
-</html>
-
-
-
->
-
-cript>
-</body>
-</html>
-
-
-
->
-
